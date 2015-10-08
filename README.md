@@ -1,16 +1,15 @@
-# rpi-python
+# rpi-python3
 
-[![dockeri.co](http://dockeri.co/image/hypriot/rpi-python)](https://registry.hub.docker.com/u/hypriot/rpi-python/)
+[![dockeri.co](http://dockeri.co/image/sena/rpi-python3)](https://registry.hub.docker.com/u/sena/rpi-python3/)
 
-Raspberry Pi compatible Docker base image with Python preinstalled.
+Raspberry Pi compatible Docker base image with Python 3 preinstalled.
 
 Run all the commands from within the project root directory.
 
 ### Build Details
-- [Source Project Page](https://github.com/hypriot)
-- [Source Repository](https://github.com/hypriot/rpi-python)
-- [Dockerfile](https://github.com/hypriot/rpi-python/blob/master/Dockerfile)
-- [DockerHub] (https://registry.hub.docker.com/u/hypriot/rpi-python/)
+- [Source Repository](https://github.com/jsribeiro/rpi-python3)
+- [Dockerfile](https://github.com/jsribeiro/rpi-python3/blob/master/Dockerfile)
+- [DockerHub](https://registry.hub.docker.com/u/sena/rpi-python3/)
 
 
 #### Build the Docker Image
@@ -36,6 +35,7 @@ make push
 The MIT License (MIT)
 
 Copyright (c) 2015 Hypriot
+Copyright (c) 2015 João Sena Ribeiro, sena@smux.net
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
