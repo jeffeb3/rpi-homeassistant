@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     python3-pip \
     python3-virtualenv \
+    python3-wheel \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
