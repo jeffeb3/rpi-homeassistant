@@ -1,7 +1,5 @@
 # rpi-python3
 
-[![dockeri.co](http://dockeri.co/image/sena/rpi-python3)](https://registry.hub.docker.com/u/sena/rpi-python3/)
-
 Raspberry Pi compatible Docker base image with Python 3 preinstalled.
 
 Run all the commands from within the project root directory.
