@@ -2,9 +2,9 @@
 # Pull base image
 FROM sena/rpi-python3
 
-# Install libyaml
+# Install yaml from apt, to also install the cpp lib.
 RUN apt-get update && apt-get install -y \
-    libyaml \
+    python3-yaml\
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
