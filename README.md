@@ -28,7 +28,7 @@ make push
 ```
 #### Run home assistant with some sane defaults
 ```bash
-docker run -p 8123:8123 -v /data/.homeassistant jeffeb3/rpi-homeassistant
+docker run -p 8123:8123 -v <local config folder>:/data/.homeassistant jeffeb3/rpi-homeassistant
 ```
 
 ## License
