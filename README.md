@@ -1,14 +1,13 @@
-# rpi-python3
+# rpi-homeassistant
 
-Raspberry Pi compatible Docker base image with Python 3 preinstalled.
+Raspberry Pi compatible Docker image to run homeassistant
 
 Run all the commands from within the project root directory.
 
 ### Build Details
-- [Source Repository](https://github.com/jsribeiro/rpi-python3)
-- [Dockerfile](https://github.com/jsribeiro/rpi-python3/blob/master/Dockerfile)
-- [DockerHub](https://registry.hub.docker.com/u/sena/rpi-python3/)
-
+- [Source Repository](https://github.com/jeffeb3/rpi-homeassistant)
+- [Dockerfile](https://github.com/jeffeb3/rpi-homeassistant/blob/master/Dockerfile)
+- [DockerHub](https://registry.hub.docker.com/u/jeffeb3/rpi-homeassistant/)
 
 #### Build the Docker Image
 ```bash
@@ -26,6 +25,10 @@ make version
 
 ```bash
 make push
+```
+#### Run home assistant with some sane defaults
+```bash
+docker run -p 8123:8123 -v /data/.homeassistant jeffeb3/rpi-homeassistant
 ```
 
 ## License

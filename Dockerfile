@@ -1,20 +1,19 @@
 
 # Pull base image
-FROM resin/rpi-raspbian:jessie
-MAINTAINER João Sena Ribeiro <sena@smux.net>
+FROM sena/rpi-python3
 
-# Install dependencies
+# Install libyaml
 RUN apt-get update && apt-get install -y \
-    python3 \
-    python3-dev \
-    python3-pip \
-    python3-virtualenv \
-    python3-wheel \
+    libyaml \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
+
+# Install home assistant
+RUN pip3 install homeassistant
 
 # Define working directory
 WORKDIR /data
 
 # Define default command
-CMD ["bash"]
+CMD ["hass", "--open-ui", "--config", "/data/.homeassistant"]
+
